@@ -1,0 +1,63 @@
+.title {
+  align-self: center;
+  font-weight: bold;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: disc;
+  padding: 0;
+}
+
+.li {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  font-size: 26px;
+}
+
+.li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.findTitle {
+  align-self: center;
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: dimgray;
+}
+
+.input {
+  height: 34px;
+  width: 264px;
+  border-radius: 8px;
+}
+
+.btn {
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 16px;
+  border: 0;
+  border-radius: 4px;
+  height: 26px;
+  background-color: orange;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  cursor: pointer;
+}
+
+.btn:hover{
+    background-color: red;
+}
