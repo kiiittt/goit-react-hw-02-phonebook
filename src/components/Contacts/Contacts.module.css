@@ -41,6 +41,18 @@
   height: 34px;
   width: 264px;
   border-radius: 8px;
+  padding-left: 22px;
+}
+
+.name {
+  margin-right: 12px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.tel {
+  font-weight: 350;
+  font-size: 22px;
 }
 
 .btn {
@@ -58,6 +70,6 @@
   cursor: pointer;
 }
 
-.btn:hover{
-    background-color: red;
+.btn:hover {
+  background-color: red;
 }

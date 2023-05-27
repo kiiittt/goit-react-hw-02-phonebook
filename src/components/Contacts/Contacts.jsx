@@ -23,11 +23,13 @@ export class Contacts extends Component {
             id={this.contactId}
             value={searchName}
             onChange={onSearchChange}
+            placeholder="Please enter a name"
           />
         </label>
         {filteredContacts.map((contact, index) => (
           <li key={index} className={css.li}>
-            {contact.name}: {contact.number}
+            <span className={css.name}>{contact.name}:</span>  
+            <span className={css.tel}>{contact.number}</span>
             <button
               className={css.btn}
               type="button"
