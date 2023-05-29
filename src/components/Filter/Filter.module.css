@@ -1,0 +1,21 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.findTitle {
+  align-self: center;
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: dimgray;
+}
+
+.input {
+  height: 34px;
+  width: 264px;
+  border-radius: 8px;
+  padding-left: 22px;
+}

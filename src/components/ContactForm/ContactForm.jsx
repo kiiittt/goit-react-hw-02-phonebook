@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
-import css from './Phonebook.module.css';
+import css from './ContactForm.module.css';
+import PropTypes from 'prop-types';
 
-export class Phonebook extends Component {
-    nameId = nanoid();
-    numberId = nanoid();
+export class ContactForm extends Component {
+  state = {
+    name: '',
+    number: '',
+  };
+
+
+  nameId = nanoid();
+  numberId = nanoid();
 
   render() {
     const { onChange, onSubmit } = this.props;
@@ -12,7 +19,6 @@ export class Phonebook extends Component {
     return (
       <form onSubmit={onSubmit} className={css.form}>
         <label htmlFor={this.nameId} className={css.label}>
-          <span className={css.title}>Phonebook</span>
           <input
             className={css.input}
             type="text"
@@ -45,3 +51,5 @@ export class Phonebook extends Component {
     );
   }
 }
+
+
